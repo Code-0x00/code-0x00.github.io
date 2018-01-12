@@ -9,6 +9,7 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
+/code-0x00.github.io.model/
 
 # Used by dotenv library to load environment variables.
 # .env
