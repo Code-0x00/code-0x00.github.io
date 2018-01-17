@@ -6,9 +6,7 @@
     <meta name="description" content="Tree of Knowladge">
     <meta name="author" content="XHQ (https://github.com/Code-0x00)">
 
-<!--     <link rel="stylesheet" type="text/css" href="http://echarts.baidu.com/examples/vendors/bootstrap/css/bootstrap.css"> -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
 
     <title>ToK</title>
   </head>
@@ -16,10 +14,8 @@
   <body>
     <div id="plot_div" style="width: 100%;height:400px;"></div>
   </body>
-<!--   <script src="http://echarts.baidu.com/examples/vendors/jquery/jquery.js"></script>
-  <script src="http://echarts.baidu.com/examples/vendors/bootstrap/js/bootstrap.js"></script>
-  <script src="http://echarts.baidu.com/dist/echarts.min.js"></script> -->
-    <script src="js/jquery.js"></script>
+
+  <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/echarts.min.js"></script>
   <script type="text/javascript">
@@ -27,7 +23,7 @@
     var myChart = echarts.init(document.getElementById('plot_div'));
 
     myChart.showLoading();
-    $.get('flare.json', function (data) {
+    $.get('tree.json', function (data) {
       myChart.hideLoading();
 
       myChart.setOption(option = {
