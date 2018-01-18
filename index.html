@@ -1,20 +1,71 @@
 ---
-title: Blogging Like a Hacker
+title: XHQ's Blog
 ---
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>{{ page.title }}</title>
-</head>
-<body>
-	<h1>{{ page.title }}</h1>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-</body>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="Index">
+	    <meta name="author" content="XHQ (https://github.com/Code-0x00)">
+
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+		<title>{{ page.title }}</title>
+	</head>
+
+	<body>
+		<div id="main_div">
+			<h1>{{ page.title }}</h1><hr>
+			<ul>
+			  {% for post in site.posts %}
+			    <li>
+			      <a href="{{ post.url }}">{{ post.title }}</a>
+			    </li>
+			  {% endfor %}
+			</ul>
+		</div>
+		
+	<div id="plot_div" style="width: 100%;height:400px;"></div>
+	</body>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<script type="text/javascript">
+	    var myChart = echarts.init(document.getElementById('plot_div'));
+
+	    myChart.showLoading();
+	    $.get('tree.json', function (data) {
+	      myChart.hideLoading();
+
+	      myChart.setOption(option = {
+	        tooltip: {
+	          trigger: 'item',
+	          triggerOn: 'mousemove'
+	        },
+	        series: [
+	          {
+	            type: 'tree',
+
+	            data: [data],
+
+	            top: '18%',
+	            bottom: '14%',
+
+	            layout: 'radial',
+
+	            symbol: 'emptyCircle',
+
+	            symbolSize: 7,
+
+	            initialTreeDepth: 3,
+
+	            animationDurationUpdate: 750
+	          }
+	        ]
+	      });
+	    });
+	</script>
 </html>
