@@ -11,6 +11,7 @@ title: XHQ's Blog
 	    <meta name="author" content="XHQ (https://github.com/Code-0x00)">
 
 	    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	    <link rel="stylesheet" type="text/css" href="css/theme-hacker.css">
 
 		<title>{{ page.title }}</title>
 	</head>
@@ -37,7 +38,7 @@ title: XHQ's Blog
 	    var myChart = echarts.init(document.getElementById('plot_div'));
 
 	    myChart.showLoading();
-	    $.get('tree.json', function (data) {
+	    $.get('data/tree.json', function (data) {
 	      myChart.hideLoading();
 
 	      myChart.setOption(option = {
