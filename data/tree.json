@@ -1,21 +1,17 @@
-{
- "name": "flare",
- "children": [
-  {
-   "name": "analytics",
-   "children": [
-    {
-     "name": "cluster",
-     "children": [
-      {"name": "AgglomerativeCluster", "value": 3938},
-      {"name": "CommunityStructure", "value": 3812},
+{"name": "算法","children": [
+  {"name": "机器学习","children": [
+    {"name": "强监督学习","children": [
+      {"name": "深度学习","children": [
+        {"name":"CNN","value":0},
+        {"name":"RNN","children": [
+            {"name":"LSTM","value":0}
+        ]}
+      ]},
+      {"name": "SVM", "value": 3812},
       {"name": "HierarchicalCluster", "value": 6714},
       {"name": "MergeEdge", "value": 743}
-     ]
-    },
-    {
-     "name": "graph",
-     "children": [
+     ]},
+    {"name": "弱监督学习","children": [
       {"name": "BetweennessCentrality", "value": 3534},
       {"name": "LinkDistance", "value": 5731},
       {"name": "MaxFlowMinCut", "value": 7840},
@@ -23,10 +19,8 @@
       {"name": "SpanningTree", "value": 3416}
      ]
     },
-    {
-     "name": "optimization",
-     "children": [
-      {"name": "AspectRatioBanker", "value": 7074}
+    {"name": "无监督学习","children": [
+      {"name": "KNN", "value": 7074}
      ]
     }
    ]

@@ -38,7 +38,7 @@ title: XHQ's Blog
 	    var myChart = echarts.init(document.getElementById('plot_div'));
 
 	    myChart.showLoading();
-	    $.get('data/tree.json', function (data) {
+	    $.get('data/tree.json?', function (data) {
 	      myChart.hideLoading();
 
 	      myChart.setOption(option = {
