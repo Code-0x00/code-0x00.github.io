@@ -1,4 +1,5 @@
 ---
+layout: post
 title: DSOD 原文翻译
 ---
 
