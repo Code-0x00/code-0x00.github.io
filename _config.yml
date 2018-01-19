@@ -3,4 +3,4 @@ permalink: /:categories/:year:month:day-:title
 title: XHQ's Blog
 description: XHQ's Blog
 author: XHQ
-meta: ?
+meta: x
