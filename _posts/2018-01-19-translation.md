@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 论文翻译
-categories: translation CNN 
-tag: classify
+title: Distorted Images 论文翻译
+categories: Translation
+tag: CNN
 ---
 
 # 《On Classification of Distorted Images with Deep Convolutional Neural Networks》翻译

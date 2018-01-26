@@ -1,6 +1,8 @@
 ---
 layout: post
 title: DSOD 原文翻译
+categories: Translation
+tag: CNN
 ---
 
 # 《DSOD-Learning Deeply Supervised Object Detectors from Scratch》翻译
