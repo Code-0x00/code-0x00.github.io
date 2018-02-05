@@ -1,3 +1,44 @@
+{"name": "科学推理",
+	"children": [
+		{"name": "归纳","
+			children": [
+				{"name": "广义归纳","children": [
+					{"name": "机器学习","children": [
+						{"name":"CNN","children":[
+							{"name":"RCNN","children":[
+								{"name":"RCNN"},
+								{"name":"Fast-RCNN"},
+								{"name":"Faster-RCNN"},
+								{"name":"SSD"},
+								{"name":"YOLO"}
+							]},
+							{"name":"AlexNet"},
+							{"name":"VGGNet"},
+							{"name":"GoogleNet"},
+							{"name":"ResNet"},
+							{"name":"DenseNet"}
+						]},
+						{"name":"RNN","children": [
+							{"name":"LSTM","value":0}
+						]}
+					]},
+					{"name": "SVM", "value": 0 }
+				]},
+				{"name": "狭义/概念学习/概念形成","children": [
+					{"name": "布尔概念学习", "value": 0}
+				]},
+				{"name": "无监督学习","children": [
+					{"name": "KNN", "value": 7074}
+				]}
+			]},
+		{"name":"演绎","children":[
+			{"name":"排序"},
+			{"name":"动态规划"}
+		]}
+	]
+}
+
+
 {"name": "Q","children": [
 	{"name": "机器学习","children": [
 		{"name": "强监督学习","children": [
