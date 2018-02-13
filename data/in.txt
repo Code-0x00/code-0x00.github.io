@@ -7,7 +7,7 @@
 监督学习:强监督学习,弱监督学习
 无监督学习:聚类
 强监督学习:符号学习,统计学习,连接主义学习
-弱监督学习 :主动学习,半监督学习,直推学习
+弱监督学习:主动学习,半监督学习,直推学习
 连接主义学习:CNN,RNN,droupout
 RNN:LSTM
 CNN:AlexNet,VGG,FCN,GoogleNet,DenseNet,ResNet
