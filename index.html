@@ -40,7 +40,7 @@ title: XHQ's Blog
 			</div>
 			<br style="clear:both;" />
 		</div>
-		
+        
 		<div id="plot_div" style="width: 100%;height:517px;"></div>
 	</body>
 
@@ -49,11 +49,9 @@ title: XHQ's Blog
 	<script src="js/echarts.min.js"></script>
 	<script type="text/javascript">
 	    var myChart = echarts.init(document.getElementById('plot_div'));
-
 	    myChart.showLoading();
-	    $.get('data/tree.json?', function (data) {
+	    $.get('data/tree.json?v=180213', function (data) {
 	      myChart.hideLoading();
-
 	      myChart.setOption(option = {
 	        tooltip: {
 	          trigger: 'item',
@@ -62,9 +60,7 @@ title: XHQ's Blog
 	        series: [
 	          {
 	            type: 'tree',
-
 	            data: [data],
-
 	            label: {
                     normal: {
                     	textStyle:{
@@ -91,25 +87,17 @@ title: XHQ's Blog
                 	itemStyle:{
                 		color:'#008800'
                 	}
-
                 },
                 lineStyle:{
                 	color:'#00ff00'
                 },
-
                 top: '18%',
 	            bottom: '14%',
-
 	            //layout: 'radial',
-
 	            symbol: 'emptyCircle',
-
 	            symbolSize: 7,
-
 	            initialTreeDepth: 9,
-
 	            animationDurationUpdate: 750
-
 	          }
 	        ]
 	      });
