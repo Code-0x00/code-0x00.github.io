@@ -10,7 +10,8 @@
 弱监督学习:主动学习,半监督学习,直推学习
 连接主义学习:CNN,RNN,droupout
 RNN:LSTM
-CNN:AlexNet,VGG,FCN,GoogleNet,DenseNet,ResNet
+CNN:AlexNet,VGG,FCN,GoogleNet,DenseNet,ResNet,pooling
+pooling:max_pooling,mean_pooling
 统计学习:SVM,核方法
 演绎:算法
 算法:动态规划,排序算法,搜索算法
