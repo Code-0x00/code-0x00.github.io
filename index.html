@@ -50,7 +50,7 @@ title: XHQ's Blog
 	<script type="text/javascript">
 	    var myChart = echarts.init(document.getElementById('plot_div'));
 	    myChart.showLoading();
-	    $.get('data/tree.json?v=180213', function (data) {
+	    $.get('json/tree.json?v=180213', function (data) {
 	      myChart.hideLoading();
 	      myChart.setOption(option = {
 	        tooltip: {

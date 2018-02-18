@@ -27,6 +27,6 @@ for line in lines:
     
 json=json.dumps(t["科学推理"],ensure_ascii=False)
 #print json
-f=open('tree.json','w')
+f=open('../json/tree.json','w')
 f.write(json)
 f.close()
