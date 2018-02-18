@@ -24,9 +24,7 @@ for line in lines:
             tmp['name']=v
             tmp['value']=0
             t[xkey]['children'].append(tmp)
-    
-json=json.dumps(t["科学推理"],ensure_ascii=False)
-#print json
+json=json.dumps(t["科学推理"])#json=json.dumps(t["科学推理"],ensure_ascii=False)
 f=open('../json/tree.json','w')
 f.write(json)
 f.close()
