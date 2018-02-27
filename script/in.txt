@@ -8,9 +8,9 @@
 无监督学习:聚类
 强监督学习:符号学习,统计学习,连接主义学习
 弱监督学习:主动学习,半监督学习,直推学习
-连接主义学习:CNN,RNN,droupout
+连接主义学习:CNN,RNN,Droupout
 RNN:LSTM
-CNN:AlexNet,VGG,FCN,GoogleNet,DenseNet,ResNet,pooling
+CNN:AlexNet,VGG,FCN,GoogleNet,DenseNet,ResNet,Pooling
 pooling:max_pooling,mean_pooling
 统计学习:SVM,核方法
 演绎:算法
