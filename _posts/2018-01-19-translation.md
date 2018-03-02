@@ -5,10 +5,14 @@ categories: Translation
 tag: CNN
 ---
 
-# 《On Classification of Distorted Images with Deep Convolutional Neural Networks》翻译
+* content
+{:toc}
+
+《On Classification of Distorted Images with Deep Convolutional Neural Networks》  
+《基于深度卷积神经网络的畸变图像分类》  
 原文地址：[https://arxiv.org/pdf/1701.01924](https://arxiv.org/pdf/1701.01924)
 
-# 基于深度卷积神经网络的畸变图像分类
+
 
 ## 摘要
 图像模糊和图像噪声是图像采集过程中常见的失真。 在本文中，我们系统地研究了图像失真对深度神经网络（DNN）图像分类器的影响。 首先，我们研究了四种类型扭曲下的DNN分类器性能。 其次，我们提出了两种方法来减轻图像失真的影响：重新训练和噪声图像的微调。 我们的研究结果表明，在一定条件下，噪声图像的微调可以减少由于输入的扭曲所产生的很大影响，比再训练更实用。
