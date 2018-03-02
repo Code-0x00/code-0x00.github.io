@@ -1,5 +1,31 @@
-permalink: /:categories/:year:month:day-:title
+# Site setting
 title: XHQ's Blog
+brief-intro: Machine Learning Engineer
+baseurl: ""
+url: "https://code-0x00.github.io"
+
+permalink: /:categories/:year:month:day-:title
+
+# Links
+twitter_username: yohoho233
+facebook_username: yohoho233
+github_username:  Code-0x00
+email: kmsj0x00@163.com
+weibo_username: yohoho233
+zhihu_username: yohoho233
+linkedIn_username: yohoho233
+dribbble_username:
+
+description_footer: 好好学习，锻炼身体！
+
+# Comments
+duoshuo_shortname: #xhq
+disqus_shortname: yohoho233
+
+# Statistic analysis
+baidu_tongji_id: cf8506e0ef223e57ff6239944e5d46a4
+google_analytics_id: UA-72449510-4 # google 分析追踪id
+
 description: XHQ's Blog
 author: XHQ
 meta: x
