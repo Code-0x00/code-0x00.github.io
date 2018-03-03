@@ -1,4 +1,4 @@
-# Site setting
+# Site settings
 title: XHQ's Blog
 brief-intro: Machine Learning Engineer
 baseurl: ""
@@ -29,3 +29,21 @@ google_analytics_id: UA-72449510-4 # google 分析追踪id
 description: XHQ's Blog
 author: XHQ
 meta: x
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Url
+category_dir: category/
+tag_dir: tag/
+
+# Excerpt
+excerpt_separator: "\n\n\n\n"
+
+# Paginate
+gems: [jekyll-paginate]
+paginate: 6
