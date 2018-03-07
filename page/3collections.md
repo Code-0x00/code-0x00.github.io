@@ -11,6 +11,16 @@ type: page
 
 ## 工具
 
+* [心理学](https://www.zhihu.com/question/19610070)
+
+* [TensorFlow Playground](https://playground.tensorflow.org)
+
+* [MNIST](https://yann.lecun.com/exdb/mnist)
+
+* [TensorFlow ZHC](http://wiki.jikexueyuan.com/project/tensorflow-zh/tutorials/deep_cnn.html)
+
+* [TensorFlow](https://github.com/tensorflow)
+
 * [box-shadow generator](http://www.cssmatic.com/box-shadow)
 
     生成 box-shadow 的工具。

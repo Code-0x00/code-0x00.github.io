@@ -1,0 +1,67 @@
+---
+layout: default
+title: Knowledge Tree
+---
+
+<div id="plot_div" style=" height:317px">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<script type="text/javascript">
+	    var myChart = echarts.init(document.getElementById('plot_div'));
+	    myChart.showLoading();
+	    $.get('json/tree.json?v=180213', function (data) {
+	      myChart.hideLoading();
+	      myChart.setOption(option = {
+	        tooltip: {
+	          trigger: 'item',
+	          triggerOn: 'mousemove'
+	        },
+	        series: [
+	          {
+	            type: 'tree',
+	            data: [data],
+	            label: {
+                    normal: {
+                    	textStyle:{
+                    		color:'#000'
+                    	},
+                        position: 'top',
+                        rotate: 0,
+                        verticalAlign: 'middle',
+                        align: 'right',
+                        fontSize: 9
+                    }
+                },
+                itemStyle:{
+                    color:'#880',
+                    borderWidth:1,
+                    borderColor:'#080'
+                },
+                leaves:{//moduan
+                    itemStyle:{
+                        color:'#080',
+                        borderWidth:1,
+                    borderColor:'#0c0'
+                    }
+                },
+                emphasis:{
+                	itemStyle:{
+                		color:'#880'
+                	}
+                },
+                lineStyle:{
+                	color:'#080'
+                },
+                top: '8%',
+	            bottom: '4%',
+	            symbol: 'emptyCircle',
+	            symbolSize: 4,
+	            initialTreeDepth: 7,
+	            animationDurationUpdate: 750
+	          }
+	        ]
+	      });
+	    });
+	</script>
+</div>
