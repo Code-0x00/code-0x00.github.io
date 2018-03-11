@@ -11,15 +11,15 @@ type: page
 
 ## 关于我
 
-<iframe src="https://githubbadge.appspot.com/gaohaoyang?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+<iframe src="http://avatar.csdn.net/4/1/8/3_kmsj0x00.jpg" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
 
 肖浩泉，就读于浙江工业大学，机器学习及图像识别。
 
 主要研究数字图像处理及深度学习在图像识别上的应用，图像识别、目标检测等算法在工业问题上的应用。
 
-* 2016.9- 浙江工业大学信息工程学院攻读硕士研究生
-* 2016.6 毕业于浙江工业大学 信息工程院
-* 2012.06 毕业于浙江省奉化中学
+* 2016.09- 浙江工业大学信息工程学院攻读硕士研究生
+* 2016.06  毕业于浙江工业大学 信息工程院
+* 2012.06  毕业于浙江省奉化中学
 
 ## 联系我
 
