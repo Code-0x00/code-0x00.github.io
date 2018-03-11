@@ -11,7 +11,9 @@ type: page
 
 ## 关于我
 
-<iframe src="http://avatar.csdn.net/4/1/8/3_kmsj0x00.jpg" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+<iframe src="http://avatar.csdn.net/4/1/8/3_kmsj0x00.jpg" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0">
+<img src="http://avatar.csdn.net/4/1/8/3_kmsj0x00.jpg">
+</iframe>
 
 肖浩泉，就读于浙江工业大学，机器学习及图像识别。
 
