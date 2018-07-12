@@ -1,1 +1,65 @@
-hahahah
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XHQ's Resume</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/vue.js"></script>
+</head>
+<body>
+<div id="app" class="app-content">
+    <header class="header">
+        <h1 class="name">
+            {{name}}
+            <span>{{job}}</span>
+        </h1>
+        <ul>
+            <li class="box-50" v-for="param in params">
+                <span>{{param.key}}</span>
+                <span v-if="param.href">
+                        <a :href="param.value">{{param.value}}</a>
+                    </span>
+                <span v-else>{{param.value}}</span>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <h2 class="item-title">技能清单</h2>
+        <ul class="item-row" v-for="skill in skills">
+            <h3 class="item-subtitle">{{skill.name}}</h3>
+            <li v-for="desc in skill.desc">
+                <i class="icon-circle"></i>
+                <span v-html="desc">{{desc}}</span>
+            </li>
+        </ul>
+        <!--
+        <h2 class="item-title">工作经历</h2>
+        <ul class="item-row" v-for="work in works">
+            <h3 class="item-subtitle">{{work.name}}</h3>
+            <li :key="desc" class="item-desc" v-for="desc in work.desc">
+                <i class="icon-circle"></i>
+                <span v-html="desc"></span>
+            </li>
+        </ul>
+        -->
+        <h2 class="item-title">项目经验</h2>
+        <ul class="item-row" v-for="project in projects">
+            <h3 class="item-subtitle">{{project.name}}</h3>
+            <h4 class="item-abstract" v-html="project.abstract"></h4>
+            <li class="item-desc" v-for="desc in project.desc">
+                <i class="icon-circle"></i>
+                <span v-html="desc"></span>
+            </li>
+        </ul>
+    </main>
+    <footer class="footer">
+        <div class="text">{{footer}}</div>
+        <div class="text"><a :href="hyperlink" target="_blank">最新电子版 - {{hyperlink}}</a></div>
+    </footer>
+</div>
+<script src="./js/resume.js"></script>
+</body>
+</html>

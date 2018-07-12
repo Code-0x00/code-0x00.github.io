@@ -1,0 +1,218 @@
+@charset "utf-8";
+html,body{
+  width: 100%;
+  height: 100%;
+}
+/****  文字大小初始化,使1em=10px *****/
+html > body {
+  font-family: LatoWeb,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
+}
+/*字体边框等初始化*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+tr,
+th,
+td,
+img,
+section {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+input {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  vertical-align: middle;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+code,
+kbd,
+samp,
+tt {
+  font-size: 100%;
+}
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input,
+button,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+sup,
+sub {
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* remember to highlight anchors and inserts somehow! */
+:link,
+:visited,
+ins {
+  text-decoration: none;
+}
+
+blockquote {
+  quotes: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+a img {
+  border: none;
+}/*for IE*/
+a:active {
+  star: expression(this.onFocus=this.blur());
+}/*点击虚框去除*/
+i {
+  cursor: pointer;
+  display: inline-block;
+}
+
+em {
+  font-style: inherit;
+}
+/*--------------end------------*/
+
+body,
+div {
+  position: relative;
+  vertical-align: middle;
+  color: #111111;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:before,
+.clearfix:after {
+  clear: both !important;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  clear: both;
+}
