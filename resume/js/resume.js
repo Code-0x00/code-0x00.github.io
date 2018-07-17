@@ -39,7 +39,7 @@ function () {
             {
                 name: "学术成果",
                 desc: [
-                    "IEEE ACCESS发表论文一篇《<a href=\"https://ieeexplore.ieee.org/document/8369422/\">Evolving Convolutional Neural Network and Its Application in Fine-Grained Visual Categorization</a>》，结合网络爬虫和Active Learning算法实现了一个半监督的CNN学习方法，引入“类间相似度”以提高弱标签数据的利用率，最后在CIFAR-10、Oxford Pet Ⅲ和自定义的数据集Chinese Food上都获得了良好的表现。",
+                    "IEEE ACCESS发表论文一篇《<a href=\"https://ieeexplore.ieee.org/document/8369422/\">Evolving Convolutional Neural Network and Its Application in Fine-<br>&emsp;&emsp;&ensp;Grained Visual Categorization</a>》，结合网络爬虫和Active Learning算法实现了一个半监督的CNN学习<br>&emsp;&emsp;&ensp;方法，引入“类间相似度”以提高弱标签数据的利用率，最后在CIFAR-10、Oxford Pet Ⅲ和（自定义的数据<br>&emsp;&emsp;&ensp;集）Chinese Food上都获得了良好的表现。",
                     "发明专利6篇，软著1篇。"
                 ]
                 },
@@ -63,7 +63,7 @@ function () {
                     "熟悉Git版本控制，具有良好的沟通写作能力。",
                     "熟练使用CAFFE、TensorFlow、PyTorch搭建深度学习模型。",
                     "熟练使用OpenCV处理数字图像。",
-                    "熟悉正则表达式和Python爬虫以及Sqlite的使用，有过Baidu、Sogou、Bing、Google、Yahoo等搜索引擎，<br>&emsp;&emsp;&ensp;以及Flickr、Instagram、腾讯漫画、梦幻西游藏宝阁、贝壳网、巨潮资讯网等数据的爬虫经验。",
+                    "熟悉正则表达式和Python爬虫以及Sqlite的使用，有过Baidu、Sogou、Bing、Google、Yahoo、<br>&emsp;&emsp;&ensp;Flickr、Instagram、腾讯漫画、梦幻西游藏宝阁、贝壳网、巨潮资讯网等数据的爬虫经验。",
                     "熟练使用Python、C/C++在Windows/Linux环境下编程。",
                     "熟悉在Windows、CentOS、Ubuntu、Debian下工作。",
                     "了解MFC、QT/PyQT、Windows API的使用方法。",
@@ -105,7 +105,7 @@ function () {
                     "产出：专利三篇 + 在线的可学习的图像分类系统",
                     "工具：Python + CAFFE + Flask + Tornado + Sqlite",
                     "使用CAFFE搭建VGG16模型并用预训练的模型初始化参数，提供待训练的Python接口。",
-                    "Python搭建爬虫系统，可以实时根据关键词在Baidu、Bing、Google等搜索引擎爬取相关图片，并将图片列表存储到Sqlite。",
+                    "Python搭建爬虫系统，可以实时根据关键词在Baidu、Bing、Google等搜索引擎爬取相关图<br>&emsp;&emsp;&ensp;片，并将图片列表存储到Sqlite。",
                     "利用Active Learning的方法训练图像分类器，并提供分类接口。",
                     "Tornado 搭建异步加载的后台服务，给不同用户分配cookie同时布置爬虫和训练任务。",
                     "Flask提供前端的展示。"
@@ -150,6 +150,7 @@ function () {
                 abstract: "设计一个风机驱动的单摆控制程序，使单摆末端（带有激光笔）画出指定的轨迹如：圆、椭圆、倾斜指定度角的直线等。",
                 desc: [
                     "技术要点：将单摆的运动分解为在笛卡尔坐标系x、y轴上两个独立的周期运动。",
+                    "成绩：省三等奖。",
                     "利用陀螺仪、电子罗盘等传感器获取单摆状态。",
                     "利用卡尔曼滤波计算单摆的精确状态。",
                     "用PID算法控制单摆运动。"
@@ -159,7 +160,8 @@ function () {
                 name: "飞思卡尔智能车竞赛",
                 abstract: "基于摄像头自动寻路、单片机控制的四驱车竞速比赛。",
                 desc: [
-                    "技术要点：PID控制算法和启发式的赛道识别算法。"
+                    "技术要点：PID控制算法和启发式的赛道识别算法。",
+                    "成绩：省二等奖。"
                 ]
                 }
             ],
