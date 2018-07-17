@@ -12,13 +12,13 @@ function () {
             value: "男",
             }, {
             key: "本科",
-            value: "2016届 浙江工业大学 电子科学与技术",
+            value: "浙江工业大学 电子科学与技术 2016届",
             }, {
             key: "电话：",
             value: "157 5717 1201"
             }, {
             key: "硕士",
-            value: "2019届 浙江工业大学 控制科学与工程",
+            value: "浙江工业大学 控制科学与工程 2019届",
             }, {
             key: "邮箱：",
             value: "kmsj0x00@163.com"
@@ -37,11 +37,18 @@ function () {
             ],
             skills: [
             {
-                name: "机器学习与计算机视觉",
+                name: "学术成果",
                 desc: [
-                    "熟悉<b>Active Learning、Co-Training、Collaborative learning</b>的原理。",
-                    "熟悉人工神经网络、<b>CNN、RNN、GAN</b>和<b>Capsule</b>的原理和实现方法。",
-                    "熟悉<b>数字图像处理</b>的原理和实现方法。",
+                    "IEEE ACCESS论文一篇《<a href=\"https://ieeexplore.ieee.org/document/8369422/\">Evolving Convolutional Neural Network and Its Application in Fine-Grained Visual Categorization</a>》，结合网络爬虫和Active Learning算法实现了一个半监督的CNN学习方法，引入“类间相似度”以提高弱标签数据的利用率，最后在CIFAR-10、Oxford Pet Ⅲ和自定义的数据集Chinese Food上都获得了良好的表现。",
+                    "发明专利6篇，软著1篇。"
+                ]
+                },
+            {
+                name: "理论知识",
+                desc: [
+                    "熟悉Active Learning、Co-Training、Collaborative learning的原理。",
+                    "熟悉人工神经网络、CNN、RNN、GAN和Capsule的原理和实现方法。",
+                    "熟悉数字图像处理的原理和实现方法。",
                     "熟练使用<b>CAFFE、TensorFlow、PyTorch</b>搭建深度学习模型。",
                     "熟练使用<b>Python、C/C++</b>在<b>Windows/Linux</b>环境下编程。",
                     "熟练使用<b>OpenCV</b>处理数字图像。",
@@ -53,7 +60,7 @@ function () {
                 ]
                 },
                 {
-                name: "其它",
+                name: "实践应用",
                 desc: [
                     "良好的开发习惯，对于代码安全、规范、可靠性和可扩展性有一定的自我要求。",
                     "熟悉<b>正则表达式</b>，有过Python<b>爬虫</b>的经验，爬取过Baidu、Sogou、Bing、Google、Yahoo等搜索引擎，<br>&emsp;&emsp;&ensp;以及Flickr、Instagram、腾讯漫画、梦幻西游藏宝阁、贝壳网等。",
@@ -72,8 +79,7 @@ function () {
                 {
                 name: "杭州海康威视数字技术股份有限公司",
                 desc: [
-                    "<span class='work-years-range'>2015.7 - 2016.10</span>  Android开发工程师",
-                    "<span class='work-years-range'>2016.10 - 至今</span>   Web前端开发工程师",
+                    "<span class='work-years-range'>2018.7 -  至今</span>人工智能算法工程师"
                 ]
                 },
             ],
@@ -152,12 +158,12 @@ function () {
                 name: "飞思卡尔智能车竞赛",
                 abstract: "基于摄像头自动寻路、单片机控制的四驱车竞速比赛。",
                 desc: [
-                    "技术要点：启发式的赛道识别算法和PID控制算法。"
+                    "技术要点：PID控制算法和启发式的赛道识别算法。"
                 ]
                 }
             ],
             footer: "感谢您宝贵的时间，希望可以得到您的肯定",
-            hyperlink: "http://www.ivsn-group.com/xhq/resume/",
+            hyperlink: "https://code-0x00.github.io/resume/",
         },
     }
     )
