@@ -5,20 +5,20 @@ function () {
         el: '#app',
         data: {
             name: '肖浩泉',
-            job: '研究方向：计算机视觉',
+            job: '计算机视觉',
             params: [
             {
             key: "性别：",
             value: "男",
             }, {
-            key: "本科",
-            value: "浙江工业大学 电子科学与技术 2016届",
+            key: "硕士",
+            value: "浙江工业大学 控制科学与工程 2019届",
             }, {
             key: "电话：",
             value: "157 5717 1201"
             }, {
-            key: "硕士",
-            value: "浙江工业大学 控制科学与工程 2019届",
+            key: "本科",
+            value: "浙江工业大学 电子科学与技术 2016届",
             }, {
             key: "邮箱：",
             value: "kmsj0x00@163.com"
@@ -39,7 +39,7 @@ function () {
             {
                 name: "学术成果",
                 desc: [
-                    "IEEE ACCESS发表论文一篇《<a href=\"https://ieeexplore.ieee.org/document/8369422/\">Evolving Convolutional Neural Network and Its Application in Fine-<br>&emsp;&emsp;&ensp;Grained Visual Categorization</a>》，结合网络爬虫和Active Learning算法实现了一个半监督的CNN学习<br>&emsp;&emsp;&ensp;方法，引入“类间相似度”以提高弱标签数据的利用率，最后在CIFAR-10、Oxford Pet Ⅲ和（自定义的数据<br>&emsp;&emsp;&ensp;集）Chinese Food上都获得了良好的表现。",
+                    "在 IEEE ACCESS 上发表学术论文一篇。<br>&emsp;&emsp;&ensp;《<a href=\"https://ieeexplore.ieee.org/document/8369422/\">Evolving Convolutional Neural Network and Its Application in Fine-Grained Visual Categorization</a>》，结<br>&emsp;&emsp;&ensp;合网络爬虫和Active Learning算法实现了一个半监督的CNN学习方法，引入“类间相似度”以提高弱标签数据<br>&emsp;&emsp;&ensp;的利用率，最后在CIFAR-10、Oxford Pet Ⅲ和（自定义的数据集）Chinese Food上都获得了良好的表现。",
                     "发明专利6篇，软著1篇。"
                 ]
                 },
@@ -63,7 +63,7 @@ function () {
                     "熟悉Git版本控制，具有良好的沟通写作能力。",
                     "熟练使用CAFFE、TensorFlow、PyTorch搭建深度学习模型。",
                     "熟练使用OpenCV处理数字图像。",
-                    "熟悉正则表达式和Python爬虫以及Sqlite的使用，有过Baidu、Sogou、Bing、Google、Yahoo、<br>&emsp;&emsp;&ensp;Flickr、Instagram、腾讯漫画、梦幻西游藏宝阁、贝壳网、巨潮资讯网等数据的爬虫经验。",
+                    "熟悉正则表达式、Python爬虫和Sqlite的使用，有过Baidu、Sogou、Bing、Google、Yahoo、<br>&emsp;&emsp;&ensp;Flickr、Instagram、腾讯漫画、梦幻西游藏宝阁、贝壳网、巨潮资讯网等数据的爬虫经验。",
                     "熟练使用Python、C/C++在Windows/Linux环境下编程。",
                     "熟悉在Windows、CentOS、Ubuntu、Debian下工作。",
                     "了解MFC、QT/PyQT、Windows API的使用方法。",
