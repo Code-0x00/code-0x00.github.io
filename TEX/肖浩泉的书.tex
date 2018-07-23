@@ -1,0 +1,340 @@
+\documentclass[UTF8]{ctexbook}
+
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{amsmath,bm}
+\usepackage{clrscode}
+\usepackage{subfigure}
+
+\usepackage{graphicx}
+
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{amsmath} 
+\usepackage{amssymb}
+
+\usepackage{url}
+\usepackage[colorlinks,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+
+\begin{document}
+\title{机器学习与计算机视觉}
+\author{ 肖浩泉}
+\maketitle
+
+\tableofcontents
+
+\part{机器学习}
+\chapter{深度学习}
+\section{深度学习面试100题（更新到60题）}
+参考自微信公众号“七月在线实验室”的推送文章。
+\subsection{梯度下降算法的正确步骤是什么？}
+a.计算预测值和真实值之间的误差  
+
+b.重复迭代，直至得到网络权重的最佳值  
+
+c.把输入传入网络，得到输出值  
+
+d.用随机值初始化权重和偏差  
+
+e.对每一个产生误差的神经元，调整相应的（权重）值以减小误差  
+\\  
+
+A.abcde    B.edcba     C.cbaed      D.dcaeb
+
+\paragraph{解析}正确答案D，考查知识点-深度学习。
+
+
+\subsection{什么情况下神经网络模型被称为深度学习模型？}
+已知：  
+
+- 大脑是有很多个叫做神经元的东西构成，神经网络是对大脑的简单的数学表达。
+
+- 每一个神经元都有输入、处理函数和输出。
+
+- 神经元组合起来形成了网络，可以拟合任何函数。
+
+- 为了得到最佳的神经网络，我们用梯度下降方法不断更新模型
+
+给定上述关于神经网络的描述，什么情况下神经网络模型被称为深度学习模型？
+
+
+
+A.加入更多层，使神经网络的深度增加
+
+B.有维度更高的数据
+
+C.当这是一个图形识别的问题时
+
+D.以上都不正确
+
+
+
+解析：正确答案A，更多层意味着网络更深。没有严格的定义多少层的模型才叫深度模型，目前如果有超过2层的隐层，那么也可以及叫做深度模型。
+
+
+\subsection{训练CNN时，可以对输入进行旋转、平移、缩放等预处理提高模型泛化能力。这么说是正确吗？}
+
+
+解析：对。如寒sir所说，训练CNN时，可以进行这些操作。当然也不一定是必须的，只是data augmentation扩充数据后，模型有更多数据训练，泛化能力可能会变强。
+
+\subsection{下面哪项操作能实现跟神经网络中Dropout的类似效果？}
+
+
+
+A.Boosting    B.Bagging    C.Stacking    D.Mapping
+
+
+
+\paragraph{解析}正确答案B。Dropout可以认为是一种极端的Bagging，每一个模型都在单独的数据上训练，同时，通过和其他模型对应参数的共享，从而实现模型参数的高度正则化。
+
+
+
+\subsection{下列哪一项在神经网络中引入了非线性？}
+
+A.随机梯度下降
+
+B.修正线性单元（ReLU）
+
+C.卷积函数
+
+D.以上都不正确
+
+\paragraph{解析}正确答案B。修正线性单元是非线性的激活函数。
+
+
+
+
+
+
+\subsection{CNN的卷积核是单层的还是多层的？}
+
+解析：
+
+一般而言，深度卷积网络是一层又一层的。层的本质是特征图, 存贮输入数据或其中间表示值。一组卷积核则是联系前后两层的网络参数表达体, 训练的目标就是每个卷积核的权重参数组。
+
+
+
+描述网络模型中某层的厚度，通常用名词通道channel数或者特征图feature map数。不过人们更习惯把作为数据输入的前层的厚度称之为通道数（比如RGB三色图层称为输入通道数为3），把作为卷积输出的后层的厚度称之为特征图数。
+
+
+
+卷积核(filter)一般是3D多层的，除了面积参数, 比如3x3之外, 还有厚度参数H（2D的视为厚度1). 还有一个属性是卷积核的个数N。
+
+
+
+卷积核的厚度H, 一般等于前层厚度M(输入通道数或feature map数). 特殊情况M > H。
+
+卷积核的个数N, 一般等于后层厚度(后层feature maps数，因为相等所以也用N表示)。
+
+卷积核通常从属于后层，为后层提供了各种查看前层特征的视角，这个视角是自动形成的。
+
+卷积核厚度等于1时为2D卷积，对应平面点相乘然后把结果加起来，相当于点积运算；
+
+卷积核厚度大于1时为3D卷积，每片分别平面点求卷积，然后把每片结果加起来，作为3D卷积结果；1x1卷积属于3D卷积的一个特例，有厚度无面积, 直接把每片单个点乘以权重再相加。
+
+
+
+归纳之，卷积的意思就是把一个区域，不管是一维线段，二维方阵，还是三维长方块，全部按照卷积核的维度形状，对应逐点相乘再求和，浓缩成一个标量值也就是降到零维度，作为下一层的一个feature map的一个点的值！
+
+可以比喻一群渔夫坐一个渔船撒网打鱼，鱼塘是多层水域，每层鱼儿不同。
+
+船每次移位一个stride到一个地方，每个渔夫撒一网，得到收获，然后换一个距离stride再撒，如此重复直到遍历鱼塘。
+
+A渔夫盯着鱼的品种，遍历鱼塘后该渔夫描绘了鱼塘的鱼品种分布；
+
+B渔夫盯着鱼的重量，遍历鱼塘后该渔夫描绘了鱼塘的鱼重量分布；
+
+还有N-2个渔夫，各自兴趣各干各的；
+
+最后得到N个特征图，描述了鱼塘的一切！
+
+
+
+2D卷积表示渔夫的网就是带一圈浮标的渔网，只打上面一层水体的鱼；
+
+3D卷积表示渔夫的网是多层嵌套的渔网，上中下层水体的鱼儿都跑不掉；
+
+1x1卷积可以视为每次移位stride，甩钩钓鱼代替了撒网；
+
+
+
+下面解释一下特殊情况的 M > H：
+
+实际上，除了输入数据的通道数比较少之外，中间层的feature map数很多，这样中间层算卷积会累死计算机（鱼塘太深，每层鱼都打，需要的鱼网太重了）。所以很多深度卷积网络把全部通道/特征图划分一下，每个卷积核只看其中一部分（渔夫A的渔网只打捞深水段，渔夫B的渔网只打捞浅水段）。这样整个深度网络架构是横向开始分道扬镳了，到最后才又融合。这样看来，很多网络模型的架构不完全是突发奇想，而是是被参数计算量逼得。特别是现在需要在移动设备上进行AI应用计算(也叫推断), 模型参数规模必须更小, 所以出现很多减少握手规模的卷积形式, 现在主流网络架构大都如此。
+
+
+
+\subsection{什么是卷积？}
+
+解析：
+
+对图像（不同的数据窗口数据）和滤波矩阵（一组固定的权重：因为每个神经元的多个权重固定，所以又可以看做一个恒定的滤波器filter）做内积（逐个元素相乘再求和）的操作就是所谓的『卷积』操作，也是卷积神经网络的名字来源。
+
+非严格意义上来讲，下图中红框框起来的部分便可以理解为一个滤波器，即带着一组固定权重的神经元。多个滤波器叠加便成了卷积层。
+
+
+
+
+\subsection{什么是CNN的池化pool层？}
+
+解析：
+
+池化，简言之，即取区域平均或最大，如下图所示（图引自cs231n）
+
+
+
+ 上图所展示的是取区域最大，即上图左边部分中 左上角2x2的矩阵中6最大，右上角2x2的矩阵中8最大，左下角2x2的矩阵中3最大，右下角2x2的矩阵中4最大，所以得到上图右边部分的结果：6 8 3 4。
+
+
+
+\subsection{简述下什么是生成对抗网络。}
+
+解析：
+
+GAN之所以是对抗的，是因为GAN的内部是竞争关系，一方叫generator，它的主要工作是生成图片，并且尽量使得其看上去是来自于训练样本的。另一方是discriminator，其目标是判断输入图片是否属于真实训练样本。
+
+
+
+更直白的讲，将generator想象成假币制造商，而discriminator是警察。generator目的是尽可能把假币造的跟真的一样，从而能够骗过discriminator，即生成样本并使它看上去好像来自于真实训练样本一样。
+
+
+
+如下图中的左右两个场景：
+
+ 
+
+
+
+更多请参见此课程：《生成对抗网络班》（链接：https://www.julyedu.com/course/getDetail/83）
+
+
+
+\subsection{学梵高作画的原理是什么？}
+
+解析：
+
+这里有篇如何做梵高风格画的实验教程《教你从头到尾利用DL学梵高作画：GTX 1070 cuda 8.0 tensorflow gpu版》
+（链接：http://blog.csdn.net/v\_july\_v/article/details/52658965），至于其原理请看这个视频：NeuralStyle艺术化图片（学梵高作画背后的原理）（链接：\url{http://www.julyedu.com/video/play/42/523}）。
+\subsection{46、你如何判断一个神经网络是记忆还是泛化?}
+
+\paragraph{解析}
+
+
+具有许多参数的神经网络具有记忆大量训练样本的能力。那么，神经网络是仅仅记忆训练样本（然后简单地根据最相似的训练点对测试点进行分类），还是它们实际上是在提取模式并进行归纳？这有什么不同吗？
+
+
+
+人们认为存在不同之处的一个原因是，神经网络学习随机分配标签不同于它学习重复标签的速度。这是 Arpit 等人在论文中使用的策略之一。让我们看看是否有所区别？
+
+
+\paragraph{方法}
+ 首先我们生成一个 6 维高斯混合，并随机分配它们的标签。我们测量训练数据的正确率，以增加数据集的大小，了解神经网络的记忆能力。然后，我们选择一个神经网络能力范围之内的数据集大小，来记忆并观察训练过程中神经网络与真实标签之间是否存在本质上的差异。特别是，我们观察每个轮数的正确率度，来确定神经网络是真正学到真正的标签，还是随机标签。
+
+
+\paragraph{假设}
+我们预计，对随机标签而言，训练应该耗费更长的时间。而真正标签则不然。
+% 任务编号
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{l|c}
+任务&编号\\
+\hline
+皱纹&1\\
+毛孔&2\\
+化妆&3\\
+色斑&4\\
+晒斑&5\\
+粉刺&6\\
+黑头&7\\
+红血丝&8\\
+皮肤色素&9\\
+综合分析&0\\
+
+\end{tabular}
+\caption{任务编号}
+\end{table}
+%\subsection{请求参数}
+% 请求参数
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{l|l|l}
+
+Key值&数值类型&说明\\
+\hline
+image&base64编码的原始图像&待分析的图像\\
+
+light&['rgd','pzd','uvd']&表示图像的光源：自然光、偏正光或紫外光\\
+
+analysis&0、1&表示（不要/要） 返回综合分析结果\\
+
+\end{tabular}
+\caption{请求参数说明}
+\end{table}
+
+
+%\subsection{返回参数}
+% 返回参数
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{c|c|c}
+
+Key值&类型&说明\\
+\hline
+t & 1,2,3,...,9 & 对应9种任务\\
+\hline
+n & 整数 & 特征数量\\
+\hline
+l（小写L） & 1,2,3,...,9 & 分类等级\\
+\hline
+p & 0.0-1.0的浮点数 & 特征覆盖率\\
+\hline
+png & base64编码的png图像 & 描述特征的png图像\\
+\hline
+link & 效果图的连接地址 & 描述特征的png图像\\
+
+\end{tabular}
+\caption{返回参数说明}
+\end{table}
+
+%\subsection{分析返回参数}
+% 分析返回参数
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{l|l}
+
+Key值&说明\\
+\hline
+collagen\_protein		&	胶原蛋白	\\
+subcutaneous\_silk		&	皮下血丝	\\
+skin\_moisture		&	皮肤水分	\\
+oil\_secretion		&	油脂分泌	\\
+blackhead\_acne		&	黑头粉刺	\\
+skin\_pigment		&	皮肤色素	\\
+epidermal\_layer\_analysis		&	表皮层分析	\\
+derma\_analysis		&	真皮层分析	\\
+red\_blood\_state		&	红血丝状态	\\
+skin\_hydrous\_state		&	皮肤含水状态	\\
+skin\_oil\_secretion		&	皮肤油脂分泌	\\
+cleanliness\_of\_hair\_follicle		&	毛囊清洁程度	\\
+hypodermic\_pigmentation		&	皮下色素状态	\\
+elastic\_fiber\_state		&	弹性纤维状态	\\
+collagen\_fibrous\_state		&	胶原纤维状态	\\
+
+\end{tabular}
+\caption{分析返回参数说明}
+\end{table}
+
+\section{启用说明}
+解压缩程序包，cd到解压目录下“webDemo”中，运行 $python~main.py$，程序将启用5000端口。
+
+
+%=====================================================================END=====================================================================%
+\end{document}
