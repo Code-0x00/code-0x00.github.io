@@ -88,7 +88,7 @@ function () {
                 desc: [
                     "算法：目标检测、语义分割、多标签学习、少样本学习",
                     "产出：专利二篇 + 半自动的图像标注系统 + 客户端 + 展示网页 + 后台服务 + 分析模型",
-                    "工具：OpenCV + TensorFlow + OpenCV + Flask + Tornado + PyQt",
+                    "工具：OpenCV + TensorFlow + Flask + Tornado + PyQt",
                     "利用Faster R-CNN检测毛孔信息。",
                     "利用全卷积网络分割粉刺、黑头、晒斑、色斑和血丝。",
                     "利用GLCM实现皱纹严重程度的评估。",
