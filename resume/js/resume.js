@@ -75,9 +75,9 @@ function () {
             ],
             works: [
                 {
-                name: "杭州海康威视数字技术股份有限公司",
+                name: "智慧视通",
                 desc: [
-                    "<span class='work-years-range'>2018.7 -  至今</span>人工智能算法工程师"
+                    "<span class='work-years-range'>2018.7 -  至今</span>算法工程师"
                 ]
                 },
             ],
