@@ -77,7 +77,7 @@ function () {
                 {
                 name: "智慧视通",
                 desc: [
-                    "<span class='work-years-range'>2018.7 -  至今</span>算法工程师"
+                    "<span class='work-years-range'>2018.9 -  至今</span>算法工程师"
                 ]
                 },
             ],
