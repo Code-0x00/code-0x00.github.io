@@ -4,6 +4,7 @@ function () {
     {
         el: '#app',
         data: {
+            version:'1.2.1',
             name: '肖浩泉',
             job: '计算机视觉',
             params: [
@@ -75,9 +76,10 @@ function () {
             ],
             works: [
                 {
-                name: "智慧视通",
+                name: "天津智慧视通科技有限公司（杭州）",
                 desc: [
-                    "<span class='work-years-range'>2018.9 -  至今</span>算法工程师"
+                    "<span class='work-years-range'>2018.9 -  至今</span>算法工程师",
+                    "负责监控视频的行人跟踪和重检测算法开发"
                 ]
                 },
             ],
