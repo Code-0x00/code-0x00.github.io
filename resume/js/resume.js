@@ -54,9 +54,9 @@ function () {
                     "熟悉Git版本控制，具有良好的沟通写作能力。",
                     "熟练使用CAFFE、TensorFlow、PyTorch搭建深度学习模型。",
                     "熟练使用OpenCV处理数字图像。",
-                    "熟悉正则表达式、Python爬虫和Sqlite的使用，有过Baidu、Sogou、Bing、Google、Yahoo、<br>&emsp;&emsp;&ensp;Flickr、Instagram、腾讯漫画、梦幻西游藏宝阁、贝壳网、巨潮资讯网等数据的爬虫经验。",
-                    "熟练使用Python、C/C++在Windows/Linux环境下编程。",
-                    "熟悉在Windows、CentOS、Ubuntu、Debian下工作。",
+                    "了解正则表达式、Python爬虫和Sqlite的使用，有过Baidu、Sogou、Bing、Google、Yahoo、<br>&emsp;&emsp;&ensp;Flickr、Instagram、腾讯漫画、梦幻西游藏宝阁、贝壳网、巨潮资讯网等数据的爬虫经验。",
+                    "能够使用Python、C/C++在Windows/Linux环境下编程。",
+                    "能够在Windows、CentOS、Ubuntu、Debian下工作。",
                 ]
                 }
             ],
@@ -64,8 +64,8 @@ function () {
                 {
                 name: "智慧视通科技有限公司",
                 desc: [
-                    "<span class='work-years-range'>2018.9 -  至今</span>算法工程师（实习）",
-                    "负责基于监控视频的行人检测和跟踪算法研究；负责深度学习框架的部署和行人重检测算法的研究",
+                    "<span class='work-years-range'>2018.09.14 - 至今</span>算法工程师（实习）",
+                    "负责基于监控视频的行人检测和跟踪算法研究；将负责深度学习框架的部署和行人重检测算法的研究",
                 ]
                 },
             ],
@@ -95,12 +95,12 @@ function () {
                 name: "肌肤管家",
                 abstract: "一个智能的图像分析系统。基于自然光、紫外光和偏振光下皮肤的高清图像对皮肤质量进行评估，根据毛孔、皱纹、粉刺、黑头、色斑、晒斑、血丝、肤色等多个指标分析用户的皮肤情况，并构建用户画像。",
                 desc: [
-                    "算法：目标检测、语义分割、多标签学习、少样本学习",
+                    "算法：目标检测、图像分割、神经网络",
                     "产出：专利二篇 + 半自动的图像标注系统 + 客户端 + 展示网页 + 后台服务 + 分析模型",
                     "工具：OpenCV + TensorFlow + Flask + Tornado + PyQt",
                     "利用Faster R-CNN检测毛孔信息。",
-                    "利用全卷积网络分割粉刺、黑头、晒斑、色斑和血丝。",
-                    "利用GLCM实现皱纹严重程度的评估。",
+                    "利用神经网络分割粉刺、黑头、晒斑、色斑和血丝。",
+                    "评估图像清晰度实现皱纹严重程度的评估。",
                     "利用Multi-Task CNN实现多任务的等级评估。",
                     "利用tornado搭建后台服务。",
                     "利用flask提供页面展示。"
@@ -179,6 +179,6 @@ function () {
         },
     }
     )
-}
+} 
 )
 ();
