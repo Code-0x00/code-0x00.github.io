@@ -27,12 +27,20 @@
         </ul>
     </header>
     <main class="main">
-        <h2 class="item-title">技能清单</h2>
-        <ul class="item-row" v-for="skill in skills">
-            <h3 class="item-subtitle">{{skill.name}}</h3>
-            <li v-for="desc in skill.desc">
+    <h2 class="item-title">个人经历</h2>
+        
+        <ul class="item-row" v-for="research in Research">
+            <h3 class="item-subtitle">{{research.name}}</h3>
+            <li :key="desc" class="item-desc" v-for="desc in research.desc">
                 <i class="icon-circle"></i>
-                <span v-html="desc">{{desc}}</span>
+                <span v-html="desc"></span>
+            </li>
+        </ul>
+        <ul class="item-row" v-for="reward in rewards">
+            <h3 class="item-subtitle">{{reward.name}}</h3>
+            <li :key="desc" class="item-desc" v-for="desc in reward.desc">
+                <i class="icon-circle"></i>
+                <span v-html="desc"></span>
             </li>
         </ul>
         <h2 class="item-title">实习经历</h2>
@@ -43,6 +51,15 @@
                 <span v-html="desc"></span>
             </li>
         </ul>
+        <h2 class="item-title">技能清单</h2>
+        <ul class="item-row" v-for="skill in skills">
+            <h3 class="item-subtitle">{{skill.name}}</h3>
+            <li v-for="desc in skill.desc">
+                <i class="icon-circle"></i>
+                <span v-html="desc">{{desc}}</span>
+            </li>
+        </ul>
+        
         <h2 class="item-title">项目经验</h2>
         <ul class="item-row" v-for="project in projects">
             <h3 class="item-subtitle">{{project.name}}</h3>

@@ -4,7 +4,7 @@ function () {
     {
         el: '#app',
         data: {
-            version:'1.2.1',
+            version:'1.3.0',
             name: '肖浩泉',
             job: '计算机视觉',
             params: [
@@ -37,28 +37,18 @@ function () {
             }
             ],
             skills: [
-            {
-                name: "学术成果",
-                desc: [
-                    "在 IEEE ACCESS 上发表学术论文一篇。<br>&emsp;&emsp;&ensp;《<a href=\"https://ieeexplore.ieee.org/document/8369422/\">Evolving Convolutional Neural Network and Its Application in Fine-Grained Visual Categorization</a>》，结<br>&emsp;&emsp;&ensp;合网络爬虫和Active Learning算法实现了一个半监督的CNN学习方法，引入“类间相似度”以提高弱标签数据<br>&emsp;&emsp;&ensp;的利用率，最后在CIFAR-10、Oxford Pet Ⅲ和（自定义的数据集）Chinese Food上都获得了良好的表现。",
-                    "发明专利6篇，软著1篇。"
-                ]
-                },
+            
             {
                 name: "理论知识",
                 desc: [
-                    "熟悉数字图像处理的基本原理和实现方法。",
-                    "熟悉neural network、CNN、RNN、GAN和Capsule的原理和实现方法。",
-                    "熟悉Active Learning、Co-Training、Collaborative learning的原理。",
-                    "掌握几种聚类算法的原理和应用。",
-                    "掌握EM、SVM算法的原理和应用。",
-                    "了解半监督学习、直推学习。",
-                    "了解集成学习、强化学习、增量学习、稀疏学习。",
-                    "了解word2vec的原理。"
+                    "熟悉经典的数字图像处理方法。",
+                    "熟悉经典的CNN分类网络和目标检测网络。",
+                    "了解Active Learning、Co-Training、Collaborative learning等机器学习方法。",
+                    "了解EM、SVM和经典的聚类算法。",
                 ]
                 },
                 {
-                name: "应用实践和工具使用",
+                name: "实践经历",
                 desc: [
                     "良好的开发习惯，对于代码安全、规范、可靠性和可扩展性有一定的自我要求。",
                     "熟悉Git版本控制，具有良好的沟通写作能力。",
@@ -67,21 +57,38 @@ function () {
                     "熟悉正则表达式、Python爬虫和Sqlite的使用，有过Baidu、Sogou、Bing、Google、Yahoo、<br>&emsp;&emsp;&ensp;Flickr、Instagram、腾讯漫画、梦幻西游藏宝阁、贝壳网、巨潮资讯网等数据的爬虫经验。",
                     "熟练使用Python、C/C++在Windows/Linux环境下编程。",
                     "熟悉在Windows、CentOS、Ubuntu、Debian下工作。",
-                    "了解MFC、QT/PyQT、Windows API的使用方法。",
-                    "了解一些逆向工程的原理和方法。",
-                    "了解HTML和JavaScript的使用。",
-                    "了解Flask、Tornado、Apache、Tomcat和Jekyll的使用。"
                 ]
                 }
             ],
             works: [
                 {
-                name: "天津智慧视通科技有限公司（杭州）",
+                name: "智慧视通科技有限公司",
                 desc: [
-                    "<span class='work-years-range'>2018.9 -  至今</span>算法工程师",
-                    "负责监控视频的行人跟踪和重检测算法开发"
+                    "<span class='work-years-range'>2018.9 -  至今</span>算法工程师（实习）",
+                    "负责基于监控视频的行人检测和跟踪算法研究；负责深度学习框架的部署和行人重检测算法的研究",
                 ]
                 },
+            ],
+            rewards:[
+            {
+                name:"奖学金",
+                desc:[
+                "<span class='work-years-range'>2018</span>浙江工业大学信息工程学院一等学业奖学金",
+                "<span class='work-years-range'>2018</span>浙江工业大学信息工程学院单项奖学金",
+                "<span class='work-years-range'>2017</span>浙江工业大学信息工程学院二等学业奖学金",
+                "<span class='work-years-range'>2017</span>浙江工业大学信息工程学院单项奖学金",
+                ]
+                }
+            ],
+            Research:[
+            {
+                name:"学术成果",
+                desc:[
+                "在 IEEE ACCESS 发表论文<br>&emsp;&emsp;&ensp;《Evolving Convolutional Neural Network and Its Application in Fine-Grained Visual Categorization》，<br>&emsp;&emsp;&ensp;结合网络爬虫和Active Learning算法实现了一个半监督的CNN训练方法，引入“类间相似度”以提高弱标<br>&emsp;&emsp;&ensp;签数据的利用率，最后在CIFAR-10、Oxford Pet Ⅲ和（自定义的数据集）Chinese Food上都获得了良好<br>&emsp;&emsp;&ensp;的表现。",
+                "发明专利 6 篇",
+                "软著 1 篇"
+                ]
+            }
             ],
             projects: [
                 {
