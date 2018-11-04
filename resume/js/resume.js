@@ -68,7 +68,7 @@ function () {
                 {
                 name: "天津智慧视通科技有限公司杭州分公司",
                 desc: [
-                    "<span class='work-years-range'>2018.09.14 - 至今</span>研发部 算法工程师（实习）",
+                    "<span class='work-years-range'>2018.09.13 - 至今</span>研发部 算法工程师（实习）",
                     "了解并使用KCF算法实现监控视频中行人和车辆的跟踪",
                     "利用TensorRT实现深度学习算法的部署",
                 ]
