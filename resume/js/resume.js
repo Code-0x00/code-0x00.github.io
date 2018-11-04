@@ -1,5 +1,8 @@
 (
 function () {
+    var base_tile="XHQ's Resume v"
+    var vision="1.3.2"
+    document.title = base_tile + vision
     var app = new Vue(
     {
         el: '#app',
@@ -48,12 +51,13 @@ function () {
                 ]
                 },
                 {
-                name: "实践经历",
+                name: "研发能力",
                 desc: [
                     "良好的开发习惯，对于代码安全、规范、可靠性和可扩展性有一定的自我要求。",
                     "熟悉Git版本控制，具有良好的沟通写作能力。",
                     "熟练使用CAFFE、TensorFlow、PyTorch搭建深度学习模型。",
                     "熟练使用OpenCV处理数字图像。",
+                    "具有TensorRT的使用经验",
                     "了解正则表达式、Python爬虫和Sqlite的使用，有过Baidu、Sogou、Bing、Google、Yahoo、<br>&emsp;&emsp;&ensp;Flickr、Instagram、腾讯漫画、梦幻西游藏宝阁、贝壳网、巨潮资讯网等数据的爬虫经验。",
                     "能够使用Python、C/C++在Windows/Linux环境下编程。",
                     "能够在Windows、CentOS、Ubuntu、Debian下工作。",
@@ -62,10 +66,11 @@ function () {
             ],
             works: [
                 {
-                name: "智慧视通科技有限公司",
+                name: "天津智慧视通科技有限公司杭州分公司",
                 desc: [
-                    "<span class='work-years-range'>2018.09.14 - 至今</span>算法工程师（实习）",
-                    "负责基于监控视频的行人检测和跟踪算法研究；将负责深度学习框架的部署和行人重检测算法的研究",
+                    "<span class='work-years-range'>2018.09.14 - 至今</span>研发部 算法工程师（实习）",
+                    "了解并使用KCF算法实现监控视频中行人和车辆的跟踪",
+                    "利用TensorRT实现深度学习算法的部署",
                 ]
                 },
             ],
